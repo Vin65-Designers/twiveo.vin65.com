@@ -1,4 +1,5 @@
-<cfoutput> <!DOCTYPE html>
+<cfoutput> 
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -70,7 +71,7 @@
 			</div>
 
 			<div class="featureProducts">
-				<cf_product_group code="FeaturedProductGroup">
+				<cf_product_group code="HomepageProductGroup">
 			</div>
 
 		</div>
@@ -148,4 +149,5 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html> </cfoutput>
+</html>
+ </cfoutput>

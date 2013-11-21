@@ -42,9 +42,6 @@ $backtoTopBorder: #ccc;
 	font-weight: $weight;
 }
 
-//$headingFontFamily: 'Open Sans', sans-serif;
-//$buttonFontFamily: 'Open Sans', sans-serif; // Default Font Family for Buttons
-
 $userToolsBackground: image-url('user-tools-background.png'); //Background for usertools
 
 //   ===================================================================================================
@@ -500,6 +497,7 @@ header {
 					-webkit-box-sizing: border-box;
 					-moz-box-sizing: border-box;
 					box-sizing: border-box;
+					color: $fontColor;
 					height: 2em;
 					line-height: 2em;
 					outline: none;
@@ -1974,8 +1972,17 @@ footer {
 	width: 255px;
 }
 
-#v65-modalContent, #v65-signUpClubSummaryWrapper, #v65-cartTable th, #v65-cartTable td {
+#v65-modalContent, #v65-signUpClubSummaryWrapper, #v65-cartTable th, #v65-cartTable td, #v65-checkoutCartSummaryWrapper {
 	background-color: $backgroundColor !important;
+}
+
+.print {
+	#v65-cartTable th, #v65-cartTable td {
+		background-color: initial !important;
+	}
+	h1,h4 {
+		color: #000;
+	}
 }
 
 /* ----- f. Product Drilldown Social Bar ----- */
