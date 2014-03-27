@@ -1041,7 +1041,7 @@ nav {
 			.v65-productGroup-product {
 				margin: 0 0 1em;
 				width: 33%;
-
+				min-height: 200px;
 				@media screen and (max-width: 768px) {
 					float: none;
 					margin: 0 auto;
@@ -1418,7 +1418,7 @@ nav {
 
 	li a {
 		color: $primaryColor;
-
+		line-height: 2em;
 		&:hover {
 			background: none;
 			color: lighten($primaryColor, 10%);
@@ -1861,6 +1861,12 @@ footer {
 /*   ===================================================================================================
      10. Vin65 Overrides
 ======================================================================================================== */
+
+#v65-clubFormWrapper {
+	form {
+		width:56%;
+	}
+}
 
 /* ----- a. User Tools ----- */
 #user-tools {
