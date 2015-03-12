@@ -1336,6 +1336,17 @@ nav {
 		width: 47%;
 	}
 
+	.col22 {
+		float: left;
+		margin-left: 6%;
+		width: 29%;
+	}
+
+	.col22:first-child {
+		margin-left: 0;
+		width: 65%;
+	}
+
 	.col3 { 
 		float: left;
 		margin-left: 5%;
@@ -1346,6 +1357,27 @@ nav {
 		float: left;
 		margin-left: 0%;
 		width: 30%;
+	}
+
+	.col4 {
+		float: left;
+		margin-left: 3%;
+		width: 22.7%;
+	}
+
+	.col4:first-child {
+		margin-left: 0;
+	}
+
+	@media screen and (max-width: 850px) {
+		.col4 {
+			margin: 0 2% 3em;
+			width: 46%
+		}
+
+		.col4:first-child {
+			margin-left: 2%;
+		}
 	}
 
 	@media screen and (max-width: 580px) {
@@ -1362,6 +1394,13 @@ nav {
 			width: 100%;
 		}
 
+		.col22,
+		.col22:first-child {
+			float: none;
+			margin: 0 0 2em;
+			width: 100%;
+		}
+
 		.col3 { 
 			float: none;
 			margin-left: 0;
@@ -1374,8 +1413,14 @@ nav {
 			width: 100%;
 		}
 
+		.col4,
+		.col4:first-child {
+			float: none;
+			margin: 0 0 2em;
+			width: 100%;
+		}
+
 	}
-	
 
 /*   ===================================================================================================
      6. Blog Template
@@ -1736,13 +1781,21 @@ footer {
 
 				ul {
 					margin: 0 auto;
-					text-align: left;
-					width: 110px;
+					text-align: center;
 				}
+			}
+
+			li {
+				display: inline-block;
+				padding: 0 4px;
 			}
 
 			a {
 				line-height: 2.2em;
+
+				&:hover, &:focus {
+					text-decoration: none;
+				}
 			}
 
 			i {
