@@ -173,7 +173,7 @@ img.v65-border { border: 1px solid #ccc; padding: 3px; -webkit-box-sizing: borde
 .v65-col3:first-child { float: left; margin-left: 0%; width: 30%; }
 .v65-col4 { border: 1px dotted #ccc; float: left; margin-left: 3%; width: 22.7%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .v65-col4:first-child { border: 1px dotted #ccc; margin-left: 0; }
-.v65-col2 img, .v65-col22 img, .v65-col4 img, .v65-col3 img { max-width: 100% !important; height: auto !important; }
+.v65-col2 img, .v65-col2Right img, .v65-col2Left img, .v65-col4 img, .v65-col3 img { max-width: 100% !important; height: auto !important; }
 
 /*Pull Quotes*/
 .v65-quoteRight { width: 33%; border: 1px solid #ccc; background-color: #eee; color: #555; font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif; float: right; padding: 0.65em; margin: 0 0 1em 1em; }
