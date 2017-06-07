@@ -11,7 +11,7 @@
 
 	<cf_vin65GlobalAssets>
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
 	<cf_css files="/assets/css/screen.min.css,/assets/css/jquery.sidr.dark.css">
 	
@@ -30,8 +30,9 @@
 				<div id="mobile-header">
 					<a id="responsive-menu-button" href="##sidr-main"><img src="/assets/images/mobileIcon.png"/></a>
 				</div>
-				<cf_modalCart>
+				<cf_points>
 				<cf_login>
+				<cf_modalCart>	
 			</div>
 
 		</div>
@@ -104,7 +105,7 @@
 
 				<div class="footerMiddle">
 					<h3>Follow Us</h3>
-					<ul><cf_contentBlock group="Social Icons"></ul>
+					<ul><cf_customFile file="/v65html/_social.html"></ul>
 				</div>
 				
 				<div class="footerRight">

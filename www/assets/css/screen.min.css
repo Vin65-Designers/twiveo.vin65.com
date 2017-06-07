@@ -1975,6 +1975,7 @@ footer .footerCopyright .copyright {
 /* ----- a. User Tools ----- */
 #user-tools {
   position: relative;
+  width: auto;
 }
 #user-tools a {
   color: white;
@@ -1988,16 +1989,52 @@ footer .footerCopyright .copyright {
     width: 30%;
   }
 }
+@media screen and (min-width: 581px) {
+  #user-tools .v65-yourAccount, #user-tools .v65-editProfile, #user-tools .v65-login, #user-tools .v65-logout {
+    width: auto;
+  }
+}
+#user-tools #v65-modalCart {
+  position: static;
+}
 #user-tools #v65-modalCart strong {
   font-weight: normal;
+}
+@media screen and (min-width: 581px) {
+  #user-tools #v65-modalCart {
+    display: inline-block;
+    padding-left: 1em;
+  }
 }
 @media screen and (max-width: 580px) {
   #user-tools #v65-modalCart {
     width: 100%;
   }
 }
-#user-tools .v65-login, #user-tools .v65-logout {
-  width: 23%;
+
+.v65-pointsBalance {
+  display: inline-block;
+  padding-right: 1em;
+}
+@media screen and (max-width: 580px) {
+  .v65-pointsBalance {
+    display: none;
+  }
+}
+
+#v65-pointsGainedOnOrder {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin: 0.5em 0 1em;
+}
+#v65-pointsGainedOnOrder p {
+  margin: 0;
+}
+
+#v65-checkoutCartSummaryMini,
+#v65-checkCartSummaryMoreOptions {
+  float: none;
+  width: 100%;
 }
 
 /* ----- b. Homepage Product Group ----- */

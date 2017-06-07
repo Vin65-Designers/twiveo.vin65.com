@@ -11,7 +11,7 @@
 	
 	<cf_vin65GlobalAssets>
 
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
 	<cf_css files="/assets/css/screen.min.css">
 
@@ -25,7 +25,6 @@
 
 	<p style="text-align: center;">
 		<strong><cf_websiteName></strong><br>
-		111 North Street, Our City, CA (707) 888-9090
 	</p>
 	
 	<cf_vin65GlobalFooterAssets>

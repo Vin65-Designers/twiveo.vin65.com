@@ -1924,6 +1924,7 @@ footer {
 /* ----- a. User Tools ----- */
 #user-tools {
 	position: relative;
+	width: auto;
 
 	a {
 		color: $userToolsColor;
@@ -1938,19 +1939,53 @@ footer {
 		}
 	}
 
+	.v65-yourAccount, .v65-editProfile, .v65-login, .v65-logout  {
+		@media screen and (min-width: 581px){
+			width: auto;
+		}	
+	}
+
 	#v65-modalCart {
+		position: static;
+
 		strong {
 			font-weight: normal;
+		}
+		
+		@media screen and (min-width: 581px){
+			display: inline-block;
+			padding-left: 1em;
 		}
 
 		@media screen and (max-width: 580px) {
 			width: 100%;
 		}
 	}
+}
 
-	.v65-login, .v65-logout {
-		width: 23%;
+.v65-pointsBalance {
+	display: inline-block;
+	padding-right: 1em;
+
+	@media screen and (max-width: 580px){
+		display: none;
 	}
+}
+
+#v65-pointsGainedOnOrder {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin: 0.5em 0 1em;
+
+	p {
+		margin: 0;
+	}
+}
+
+#v65-checkoutCartSummaryMini,
+#v65-checkCartSummaryMoreOptions {
+	float: none;
+	width: 100%;
 }
 
 /* ----- b. Homepage Product Group ----- */
