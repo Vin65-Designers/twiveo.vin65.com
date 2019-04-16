@@ -1,5 +1,5 @@
 <cfoutput> <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 
 	<meta charset="utf-8">
@@ -13,7 +13,7 @@
 
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
-	<cf_css files="/assets/css/screen.min.css,/assets/css/jquery.sidr.dark.css">
+	<cf_css files="/assets/slick/slick-winedirect.css,/assets/slick/slick-theme-winedirect.css,/assets/css/screen.min.css,/assets/css/jquery.sidr.dark.css">
 
 	<!--[if lt IE 9]>
 		<script src="/assets/js/html5shiv-printshiv.js"></script>
@@ -45,7 +45,7 @@
 		
 		<div class="wrapper v65-group">
 			
-			<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
+			<cf_logo>
 			
 			<cf_productSearch>
 			
@@ -58,55 +58,57 @@
 
 	</header>
 
-	<article class="pageContent">
+	<main>
+		<article class="pageContent">
 
-		<div class="wrapper v65-group">
+			<div class="wrapper v65-group">
 
-			<div class="backtotop">	
-				<a href="##"><i class="icon-up-bold"></i>TOP</a>
-			</div>
-
-			<article class="pageText">
-				<cf_mainContent>
-			</article>
-
-			<section class="subMenu">
-				<a name="footerNav"></a>
-				<h4><cf_leftNavSectionTitle></h4>
-				
-				<div class="blogFilter">
-					<h5>Recent Posts</h5>
-					<cf_blogRecentPosts maxrows="10">
-
-					<h5>Blog Categories</h5>
-					<cf_blogCategories>
-
-					<h5>Our Writers</h5>
-					<cf_blogAuthors>
-
-					<h5>Blog Archives</h5>
-					<cf_blogArchives>
+				<div class="backtotop">	
+					<a href="##"><i class="icon-up-bold"></i>TOP</a>
 				</div>
 
-			</section>
+				<section class="subMenu">
+					<a name="footerNav"></a>
+					<h4><cf_leftNavSectionTitle></h4>
+					
+					<div class="blogFilter">
+						<h5>Recent Posts</h5>
+						<cf_blogRecentPosts maxrows="10">
 
-		</div>
+						<h5>Blog Categories</h5>
+						<cf_blogCategories>
 
-	</article>
-	<!--/pageContent-->
+						<h5>Our Writers</h5>
+						<cf_blogAuthors>
 
-	<section class="newsletterPromo">
+						<h5>Blog Archives</h5>
+						<cf_blogArchives>
+					</div>
 
-		<div class="wrapper v65-group">
+				</section>
 
-			<div class="promoBanner">
-				<cf_contentBlock group="Promo Banner Text">
-				<cf_subscribe contactType="Newsletter">
+				<article class="pageText">
+					<cf_mainContent>
+				</article>
+
 			</div>
 
-		</div>
+		</article>
+		<!--/pageContent-->
 
-	</section>
+		<section class="newsletterPromo">
+
+			<div class="wrapper v65-group">
+
+				<div class="promoBanner">
+					<cf_contentBlock group="Promo Banner Text">
+					<cf_subscribe contactType="Newsletter">
+				</div>
+
+			</div>
+
+		</section>
+	</main>
 
 	<footer>
 
@@ -121,7 +123,7 @@
 
 				<div class="footerMiddle">
 					<h3>Follow Us</h3>
-					<ul><cf_customFile file="/v65html/_social.html"></ul>
+					<cf_socialMediaLinks>
 				</div>
 				
 				<div class="footerRight">
@@ -132,10 +134,10 @@
 			
 		</div>
 		
-		<div class="footerCopyright">
+		<div class="footerCopyright"> 
 
 			<div class="wrapper">
-				
+				<p class="footer-info"><cf_footerInfo></p>
 				<p class="accolade">
 					<cf_vin65Accolade> 
 				</p>
@@ -149,7 +151,7 @@
 
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">
+	<cf_js files="/assets/slick/slick-winedirect.js,/assets/js/scripts.js,/assets/js/jquery.sidr.min.js">
 
 	<cf_vin65GlobalFooterAssets>
 

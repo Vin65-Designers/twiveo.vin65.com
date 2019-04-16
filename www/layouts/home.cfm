@@ -1,5 +1,5 @@
 <cfoutput> <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 
 	<meta charset="utf-8">
@@ -13,7 +13,7 @@
 
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
 
-	<cf_css files="/assets/css/jquery.sidr.dark.css,/assets/css/screen.min.css">
+	<cf_css files="/assets/slick/slick-winedirect.css,/assets/slick/slick-theme-winedirect.css,/assets/css/jquery.sidr.dark.css,/assets/css/screen.min.css">
 	
 	<!--[if lt IE 9]>
 		<script src="/assets/js/html5shiv-printshiv.js"></script>
@@ -43,7 +43,7 @@
 		
 		<div class="wrapper v65-group">
 			
-			<a href="/" accesskey="h" class="logo"><img src="/assets/images/logo.png"  alt="<cf_websiteName>"></a>
+			<cf_logo>
 			
 			<cf_productSearch>
 			
@@ -56,52 +56,54 @@
 
 	</header>
 
-	<section class="homepageImage">
+	<main>
+		<section class="homepageImage">
 
-		<cf_contentBlock group="Homepage Feature Banner">
+			<cf_contentBlock group="Homepage Feature Banner">
 
-	</section>
+		</section>
 
-	<section class="pageFeatureProducts">
+		<section class="pageFeatureProducts">
 
-		<div class="wrapper v65-group">
+			<div class="wrapper v65-group">
 
-			<div class="backtotop">	
-				<a href="##"><i class="icon-up-bold"></i>TOP</a>
+				<div class="backtotop">	
+					<a href="##"><i class="icon-up-bold"></i>TOP</a>
+				</div>
+
+				<div class="featureProducts">
+					<cf_product_group code="HomepageProductGroup">
+				</div>
+
 			</div>
 
-			<div class="featureProducts">
-				<cf_product_group code="HomepageProductGroup">
+		</section>
+
+		<section class="homepagePromo">
+
+			<div class="wrapper v65-group">
+
+				<div class="promoBanner">
+					<cf_contentBlock group="Promo Banner Text">
+					<cf_subscribe contactType="Newsletter">
+				</div>
+
 			</div>
 
-		</div>
+		</section>
 
-	</section>
+		<section class="homepageContent">
 
-	<section class="homepagePromo">
+			<div class="wrapper v65-group">
+				
+				<article class="homepageContentPods">
+					<cf_pods location="Homepage Content Pods" type="title,description">
+				</article>
 
-		<div class="wrapper v65-group">
-
-			<div class="promoBanner">
-				<cf_contentBlock group="Promo Banner Text">
-				<cf_subscribe contactType="Newsletter">
 			</div>
 
-		</div>
-
-	</section>
-
-	<section class="homepageContent">
-
-		<div class="wrapper v65-group">
-			
-			<article class="homepageContentPods">
-				<cf_pods location="Homepage Content Pods" type="title,description">
-			</article>
-
-		</div>
-
-	</section>
+		</section>
+	</main>
 
 	<footer>
 
@@ -116,7 +118,7 @@
 
 				<div class="footerMiddle">
 					<h3>Follow Us</h3>
-					<ul><cf_customFile file="/v65html/_social.html"></ul>
+					<cf_socialMediaLinks>
 				</div>
 				
 				<div class="footerRight">
@@ -130,7 +132,7 @@
 		<div class="footerCopyright">
 
 			<div class="wrapper">
-				
+				<p class="footer-info"><cf_footerInfo></p>
 				<p class="accolade">
 					<cf_vin65Accolade> 
 				</p>
@@ -144,7 +146,7 @@
 
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.sidr.min.js">
+	<cf_js files="/assets/slick/slick-winedirect.js,/assets/js/scripts.js,/assets/js/jquery.sidr.min.js">
 
 	<cf_vin65GlobalFooterAssets>
 
